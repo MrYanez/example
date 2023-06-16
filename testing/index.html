@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type=text] {
+              width: 50%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              box-sizing: border-box;
+              border: 5px solid red;
+              border-radius: 10px;
+            }
+            </style>
+
+            <script language="JavaScript">
+                function feedback(){
+                let first_name = document.theForm.elements[0].value;
+                let last_name = document.theForm.elements[1].value;
+                alert("Greetings, " + first_name + " " + last_name);
+                }
+                </script>
+    </head>
+<body>
+
+<h2>HTML Form Example</h2>
+
+<!--This is html code only-->
+
+<!--<form>
+  First name:</br>
+  <input type="text" id="fname" name="first_name"></br></br>
+  Last name:<br>
+  <input type="text" id="lname" name="last_name"></br></br>
+  <input type="submit" value="Submit">
+</form> -->
+
+<!--This is javascript ccode-->
+<form name="theForm">
+    First name:</br>
+    <input type="text" name="first_name"> </br></br>
+    Last name:<br>
+    <input type="text" name="last_name"> </br></br>
+    <input type="button" value="Submit" onclick="feedback()">
+  </form>
+</body>
+</html>
